@@ -1,0 +1,47 @@
+footer {
+    font-size: 0.7em;
+    color: gray;
+}
+
+#subheader {
+    font-size: 1.3em;
+}
+
+#hiking-img {
+    margin-top: 3%;
+    width: 70%;
+}
+
+#CV {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.pretrained-models {
+    font-size: 0.85em;
+}
+
+.citation {
+    color: orange;
+    font-size: 0.9em;
+}
+
+#css-ack {
+    font-size: 0.4em;
+}
+
+#css-ack {
+    font-size: 0.7em;
+}
+
+.untested {
+    color: red;
+}
+
+div.hidden {
+    visibility: hidden;
+}
+
+.centered {
+    text-align: center;
+}
