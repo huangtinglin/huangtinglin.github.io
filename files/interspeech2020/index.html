@@ -1,0 +1,225 @@
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Atss-Net: Target Speaker Separation via Attention-based Neural Network</title>
+  <link rel="stylesheet" type="text/css" href="https://tinglok.netlify.com/files/interspeech2020/resources/stylesheet.css">
+</head>
+
+<body>
+  <div style="margin-right: auto;margin-left: auto; margin-top: 30px; margin-bottom: 100px; width: 70%;">
+    <div style="text-align: center;">
+      <h1>Atss-Net: Target Speaker Separation via Attention-based Neural Network</h1>
+    </div>
+
+    <p> 
+      <!-- <b>Interspeech2020:</b> -->
+      This webpage is to show some listening examples for our proposed Atss-Net and the baseline VoiceFilter<sup>[1]</sup>. It allows the network computing the correlation between each feature parallelly, and using shallower layers to extract more features, compared with the CNN-LSTM architecture. We also provide some samples to prove that our Atss-Net demonstrates promising performance in speech enhancement.
+    </p>
+
+    <h2>Audio samples from the test set for two speakers' mixture</h2>
+    <p></p>
+    <p></p>
+	<h3> Type: </h3>
+	<ol>
+	    <li>F-F: female-female mixture speech </li>
+		<li>M-M: male-male mixture speech </li>
+		<li>M-F: male-female mixture speech </li>
+	</ol>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Mixture Input</th>
+          <th>VoiceFilter<sup>[1]</sup></th>
+          <th>Proposed Atss-Net</th>
+          <th>Target Speech</th>
+        </tr>
+      </thead>
+      <tbody>
+		  <td> F-F</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/7976-105575-0007-mix.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/baseline/7976-105575-0007-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/7976-105575-0007-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/target/7976-105575-0007-tar.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+
+		  <td> M-M</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/3170-137482-0036-mix.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/baseline/3170-137482-0036-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/3170-137482-0036-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/target/3170-137482-0036-tar.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+
+		  <td> M-F</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/116-288046-0007-mix.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/baseline/116-288046-0007-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/116-288046-0007-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/target/116-288046-0007-tar.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+
+		  <td> M-F</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/2412-153947-0015-mix.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/baseline/2412-153947-0015-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/2412-153947-0015-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/target/2412-153947-0015-tar.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+
+		  <td> M-F</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/4570-102353-0008-mix.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/baseline/4570-102353-0008-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/4570-102353-0008-est.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/target/4570-102353-0008-tar.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Speech Enhancement</h2>
+    <p></p>
+    <p></p>
+  <h3> Type: </h3>
+  <ol>
+      <li>C-W: mixed with Chinese Women music</li>
+    <li>F-M: mixed with Foreign Man music</li>
+    <li>P-M: mixed with Pure Music</li>
+    <li>R-M: mixed with Rap Music</li>
+    <li>F-T: mixed with Far-field TV</li>
+  </ol>
+  <!-- <h3>Note that these utterances are real recordings, so there is no target source here.</h3> -->
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Female Input</th>
+          <th>Proposed Atss-Net</th>
+          <th>Male Input</th>
+          <th>Proposed Atss-Net</th>
+        </tr>
+      </thead>
+      <tbody>
+      <td> C-W</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/f1_00001_Chinese_Woman.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/f1_00001_Chinese_Woman.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/m1_00001_Chinese_Woman.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/m1_00001_Chinese_Woman.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+
+      <td> F-M</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/f1_00001_Foreign_Man.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/f1_00001_Foreign_Man.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/m1_00001_Foreign_Man.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/m1_00001_Foreign_Man.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+
+      <td> P-M</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/f1_00001_Pure_Music.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/f1_00001_Pure_Music.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/m1_00001_Pure_Music.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/m1_00001_Pure_Music.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+
+      <td> R-M</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/f1_00001_Rap_Music.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/f1_00001_Rap_Music.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/m1_00001_Rap_Music.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/m1_00001_Rap_Music.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+
+      <td> F-T</td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/f1_00001_TV.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/f1_00001_TV.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/mixture/m1_00001_TV.wav"
+                type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+              <source src="https://tinglok.netlify.com/files/interspeech2020/demo_examples/proposed/m1_00001_TV.wav"
+                type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Reference</h2>
+    <p></p>
+    <p>[1] Q. Wang, H. Muckenhirn, K. Wilson, et al., "VoiceFilter: Targeted voice separation by speaker-conditioned spectrogram masking," in Interspeech, 2019, pp. 2728-2732.</p>
+  </div>
+
+</body>
+
+</html>
