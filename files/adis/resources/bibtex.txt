@@ -1,0 +1,6 @@
+@inproceedings{li2021learning,
+  title={Learning Visual Styles from Audio-Visual Associations},
+  author={Tingle Li, Yichen Liu, Andrew Owens, Hang Zhao},
+  booktitle={arXiv preprint},
+  year={2021}
+}
