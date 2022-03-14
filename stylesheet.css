@@ -70,7 +70,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #FDB515;
   text-decoration: none;
 }
 
@@ -81,28 +81,38 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 16px
+}
+
+i {
+  font-size: 24px
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+highlight {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #db1f48;
 }
 
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .one {
@@ -128,4 +138,12 @@ name {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.image-cropper {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
