@@ -214,7 +214,7 @@
 	<hr>
 	<center><h1>Results Video</h1></center><br>
 	<p align="center">
-		<iframe width="960" height="540" src="https://www.youtube.com/embed/zQvM1uJ4Xr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="960" height="540" src="https://www.youtube.com/embed/WsfJDJSjAlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</p>
 	<br>
 
@@ -387,53 +387,21 @@
         
 	<hr>
     <table align=center width=80%>
-        <center><h1>Restyling Video by Manipulating its Sound </h1></center><br>
+        <center><h1>Video Results (Frame by Frame Stylization)</h1></center><br>
         <div class="row justify-content-center">
-            <div class="col-sm-2">
-            	<center><span style="font-size:22px">&nbsp Input Video</span></center>
+            <div class="col-sm-4">
+            	<center><span style="font-size:24px">&nbsp Input Video</span></center>
                 <!-- <img src="./resources/method_diagram.png" style="width:100%">               -->
-                <video controls class="html-video" width="180" height="180"><source src="./videos/1.mp4" type="video/mp4"></video>
-                <audio
-                        controls
-                        src="./videos/1.wav"
-                        class="media-center"
-                        style="width:105%">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
+                <video controls class="html-video" width="360" height="360"><source src="./videos/1_real.mp4" type="video/mp4"></video>
             </div>
             <div class="col-sm-1">
             </div>
-            <div class="col-sm-2">
-                <center><span style="font-size:22px">&nbsp  120% Volume</span></center>
-                <video controls class="html-video" width="180" height="180"><source src="./videos/1-1.mp4" type="video/mp4"></video>
+            <div class="col-sm-4">
+                <center><span style="font-size:24px">&nbsp Output Video</span></center>
+                <video controls class="html-video" width="360" height="360"><source src="./videos/1_fake.mp4" type="video/mp4"></video>
                 <audio
                         controls
-                        src="./videos/2.wav"
-                        class="media-center"
-                        style="width:105%">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
-            </div>
-            <div class="col-sm-2">
-                <center><span style="font-size:22px">&nbsp 140% Volume</span></center>
-                <video controls class="html-video" width="180" height="180"><source src="./videos/1-2.mp4" type="video/mp4"></video>
-                <audio
-                        controls
-                        src="./videos/3.wav"
-                        class="media-center"
-                        style="width:105%">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
-            </div>
-                        <div class="col-sm-2">
-                <center><span style="font-size:22px">&nbsp 160% Volume</span></center>
-                <video controls class="html-video" width="180" height="180"><source src="./videos/1-3.mp4" type="video/mp4"></video>
-                <audio
-                        controls
-                        src="./videos/4.wav"
+                        src="./resources/snow.wav"
                         class="media-center"
                         style="width:105%">
                     Your browser does not support the
@@ -443,50 +411,16 @@
         </div><br>
 
         <div class="row justify-content-center">
-            <div class="col-sm-2">
-            	<center><span style="font-size:22px">&nbsp Input Video</span></center>
-                <video controls class="html-video" width="180" height="180"><source src="./videos/2.mp4" type="video/mp4"></video>
-                <audio
-                        controls
-                        src="./videos/5.wav"
-                        class="media-center"
-                        style="width:105%">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
+            <div class="col-sm-4">
+                <video controls class="html-video" width="360" height="360"><source src="./videos/2_real.mp4" type="video/mp4"></video>
             </div>
             <div class="col-sm-1">
             </div>
-            <div class="col-sm-2">
-            	<center><span style="font-size:22px">&nbsp  40% Volume</span></center>
-                <video controls class="html-video" width="180" height="180"><source src="./videos/2-1.mp4" type="video/mp4"></video>
+            <div class="col-sm-4">
+                <video controls class="html-video" width="360" height="360"><source src="./videos/2_fake.mp4" type="video/mp4"></video>
                 <audio
                         controls
-                        src="./videos/6.wav"
-                        class="media-center"
-                        style="width:105%">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
-            </div>
-            <div class="col-sm-2">
-            	<center><span style="font-size:22px">&nbsp  80% Volume</span></center>
-                <video controls class="html-video" width="180" height="180"><source src="./videos/2-2.mp4" type="video/mp4"></video>
-                <audio
-                        controls
-                        src="./videos/7.wav"
-                        class="media-center"
-                        style="width:105%">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
-            </div>
-            <div class="col-sm-2">
-            	<center><span style="font-size:22px">&nbsp  120% Volume</span></center>
-                <video controls class="html-video" width="180" height="180"><source src="./videos/2-3.mp4" type="video/mp4"></video>
-                <audio
-                        controls
-                        src="./videos/8.wav"
+                        src="./resources/rain.wav"
                         class="media-center"
                         style="width:105%">
                     Your browser does not support the
@@ -797,7 +731,7 @@
 	</table>
 	<br>
 	    
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 var sc_project=12691142; 
 var sc_invisible=1; 
 var sc_security="b5064dc1"; 
@@ -810,7 +744,7 @@ href="https://statcounter.com/" target="_blank"><img
 class="statcounter"
 src="https://c.statcounter.com/12691142/0/b5064dc1/1/"
 alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript> -->
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 	    
 </body>
 </html>
